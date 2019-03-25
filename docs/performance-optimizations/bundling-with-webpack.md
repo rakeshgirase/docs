@@ -48,6 +48,10 @@ $ ./node_modules/.bin/update-ns-webpack --configs --deps
 
 ## Usage
 
+### File Naming Conventions
+
+Please note that the pages that is xml and corresponding typescript/javascript files should end with `-page` because during the build, the Webpack analyzes statically all components that need to be loaded and to ease this process we have provided a regex that traverses all pages that have a postfix `-page`.
+
 ### NativeScript CLI commands
 
 `nativescript-dev-webpack` expands the usual workflow of working with your project. Given that you have your project running in its non-bundled state, you can test the bundled version with the following commands:
